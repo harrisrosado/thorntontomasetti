@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thornton Tomasetti + monday.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .font-display {
+            font-family: 'Figtree', sans-serif;
+            font-weight: 700;
+        }
+
+        .accent-purple {
+            color: #6161FF;
+        }
+
+        .accent-green {
+            color: #00CA72;
+        }
+
+        .accent-yellow {
+            color: #FFCC00;
+        }
+
+        .card-dark {
+            background-color: #1F2244;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+        }
+
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #6161FF, transparent);
+            margin: 4rem 0;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            line-height: 1;
+            font-weight: 700;
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="bg-black">
+
+    <!-- SECTION 1: HERO -->
+    <section class="min-h-screen flex flex-col justify-center items-center px-8 lg:px-16 relative">
+        <div class="absolute top-8 left-8 lg:left-16 flex items-center gap-6">
+            <!-- Thornton Tomasetti Logo -->
+            <div style="line-height:1.05; font-family:'Georgia','Times New Roman',serif; font-weight:900; letter-spacing:-0.5px;">
+                <span style="color:#6B7A3A; font-size:22px; display:block;">Thornton</span>
+                <span style="color:#D04A1A; font-size:22px; display:block;">Tomasetti</span>
+            </div>
+            <!-- Divider -->
+            <div style="width:1px; height:40px; background:rgba(255,255,255,0.25);"></div>
+            <!-- monday.com Logo -->
+            <svg viewBox="0 0 542.3 126.9" xmlns="http://www.w3.org/2000/svg" height="36">
+                <g>
+                    <path fill="#FB275D" d="M24.8,87.2c-3.7,0-7.1-1.9-8.9-5.1c-1.8-3.1-1.7-6.9,0.3-9.9L34.5,44c1.9-3.1,5.4-4.9,9.1-4.8
+                        c3.7,0.1,7.1,2.1,8.8,5.3c1.7,3.2,1.5,7-0.5,9.9L33.4,82.6C31.6,85.4,28.3,87.2,24.8,87.2z"/>
+                    <path fill="#FFCC00" d="M56.1,87.2c-3.7,0-7.1-1.9-8.9-5c-1.8-3.1-1.7-6.9,0.3-9.9l18.4-28.1c1.9-3.1,5.3-5,9.1-4.9s7.1,2.1,8.8,5.3
+                        s1.5,7-0.7,10l-18.4,28C62.9,85.4,59.6,87.1,56.1,87.2L56.1,87.2z"/>
+                    <path fill="#00CA72" d="M86.7,87.2c5.6,0,10.2-4.6,10.2-10.2s-4.6-10.2-10.2-10.2S76.5,71.4,76.5,77C76.5,82.7,81,87.2,86.7,87.2z"/>
+                    <path fill="#FFFFFF" d="M170.9,41.8c5.6,0,10,1.7,13.3,5.1s5,8.1,5,14.1v26.2h-13.7V62.8c0-2.9-0.8-5.1-2.3-6.7s-3.6-2.4-6.3-2.4
+                        s-4.8,0.8-6.4,2.4c-1.5,1.5-2.2,3.8-2.2,6.7v24.4h-13.7V62.8c0-2.9-0.8-5.1-2.3-6.7s-3.6-2.4-6.3-2.4s-4.8,0.8-6.4,2.4
+                        c-1.5,1.5-2.2,3.8-2.2,6.7v24.4h-13.8V42.3h13.8v5.6c1.4-1.9,3.2-3.3,5.5-4.4c2.2-1.1,4.8-1.7,7.6-1.7c3.4,0,6.4,0.7,9,2.2
+                        c2.7,1.5,4.8,3.5,6.3,6.2c1.6-2.5,3.7-4.5,6.4-6C164.8,42.5,167.7,41.8,170.9,41.8z"/>
+                    <path fill="#FFFFFF" d="M216.8,87.8c-4.4,0-8.4-0.9-11.9-2.8c-3.5-1.9-6.2-4.6-8.3-8c-2-3.5-3-7.6-3-12.2s1-8.7,3.1-12.1
+                        c2-3.5,4.8-6.2,8.4-8.1c3.5-1.9,7.5-2.8,11.9-2.8s8.4,0.9,11.9,2.8s6.3,4.6,8.4,8.1c2,3.5,3.1,7.5,3.1,12.1s-1.1,8.7-3.1,12.2
+                        s-4.9,6.2-8.4,8C225.2,86.8,221.2,87.8,216.8,87.8z M216.8,75.8c2.6,0,4.9-1,6.7-2.9c1.9-1.9,2.8-4.7,2.8-8.3s-0.9-6.3-2.7-8.3
+                        c-1.8-1.9-4-2.9-6.6-2.9c-2.7,0-4.9,1-6.7,2.9s-2.6,4.6-2.6,8.3c0,3.6,0.9,6.3,2.6,8.3C212,74.9,214.2,75.8,216.8,75.8z"/>
+                    <path fill="#FFFFFF" d="M272.5,41.8c5.3,0,9.4,1.7,12.5,5.2c3.2,3.4,4.8,8,4.8,14v26.2h-13.7V62.8c0-3-0.8-5.3-2.3-7
+                        c-1.6-1.7-3.6-2.5-6.3-2.5c-2.6,0-4.7,0.8-6.3,2.5c-1.6,1.7-2.3,4-2.3,7v24.4h-13.8V42.3h13.8v5.9c1.4-2,3.3-3.5,5.6-4.7
+                        C266.9,42.3,269.6,41.8,272.5,41.8z"/>
+                    <path fill="#FFFFFF" d="M294.2,64.6c0-4.6,0.9-8.7,2.6-12.1c1.8-3.5,4.2-6.2,7.2-8c3-1.9,6.4-2.8,10-2.8c3,0,5.6,0.6,8,1.8
+                        c2.5,1.2,4.4,2.9,5.8,5V27.7h13.8v59.5h-13.8v-6.4c-1.3,2.1-3.1,3.9-5.5,5.2c-2.4,1.3-5.1,1.9-8.3,1.9c-3.7,0-7-0.9-10-2.8
+                        s-5.4-4.6-7.2-8.1C295.1,73.3,294.2,69.2,294.2,64.6z M327.8,64.7c0-3.4-1-6.1-2.9-8.1s-4.2-3-6.9-3c-2.7,0-5.1,1-7,3
+                        c-1.9,1.9-2.8,4.6-2.8,8s0.9,6.2,2.8,8.2s4.3,3,7,3s5-1,6.9-3C326.9,70.8,327.8,68.1,327.8,64.7z"/>
+                    <path fill="#FFFFFF" d="M346.4,64.6c0-4.6,0.9-8.7,2.6-12.1c1.8-3.5,4.2-6.2,7.2-8c3-1.9,6.4-2.8,10-2.8c3.2,0,5.9,0.6,8.3,1.9
+                        s4.3,3,5.5,5.1v-6.3h13.8v44.9H380v-6.4c-1.3,2.1-3.2,3.8-5.6,5.1s-5.1,1.9-8.3,1.9c-3.6,0-7-0.9-10-2.8c-3-1.9-5.4-4.6-7.2-8.1
+                        C347.2,73.3,346.4,69.2,346.4,64.6z M380,64.7c0-3.4-1-6.1-2.9-8.1s-4.2-3-6.9-3c-2.7,0-5.1,1-7,3c-1.9,1.9-2.8,4.6-2.8,8
+                        s0.9,6.2,2.8,8.2s4.3,3,7,3s5-1,6.9-3C379,70.8,380,68.1,380,64.7z"/>
+                    <path fill="#FFFFFF" d="M447.1,42.2L419,108.4h-14.8l10.3-22.8l-18.3-43.4h15.4L422,70.3l10.3-28.1L447.1,42.2L447.1,42.2z"/>
+                    <path fill="#FFFFFF" d="M438.8,87.7c-1.2,0-2.2-0.4-3.1-1.1c-0.8-0.8-1.2-1.7-1.2-2.9s0.4-2.1,1.2-2.8c0.8-0.8,1.8-1.2,3.1-1.2
+                        c1.2,0,2.2,0.4,3,1.2c0.8,0.7,1.2,1.7,1.2,2.8s-0.4,2.1-1.2,2.9C441,87.3,440,87.7,438.8,87.7z"/>
+                    <path fill="#FFFFFF" d="M448.7,77.2c0-2.1,0.4-3.9,1.3-5.5s2-2.8,3.5-3.6c1.5-0.9,3.2-1.3,5.2-1.3c2.5,0,4.6,0.6,6.2,1.9
+                        c1.6,1.2,2.8,3,3.3,5.2h-5.5c-0.3-0.9-0.8-1.6-1.5-2c-0.7-0.5-1.5-0.8-2.5-0.8c-1.5,0-2.6,0.5-3.5,1.6c-0.9,1-1.3,2.5-1.3,4.5
+                        c0,1.9,0.4,3.4,1.3,4.5c0.9,1,2,1.6,3.5,1.6c2.1,0,3.4-0.9,4-2.8h5.5c-0.6,2.2-1.7,3.9-3.3,5.2c-1.6,1.3-3.7,1.9-6.2,1.9
+                        c-1.9,0-3.7-0.4-5.2-1.3c-1.5-0.9-2.7-2.1-3.5-3.6C449.1,81.1,448.7,79.3,448.7,77.2z"/>
+                    <path fill="#FFFFFF" d="M480.1,87.6c-1.9,0-3.7-0.4-5.2-1.3c-1.5-0.9-2.8-2.1-3.7-3.7c-0.9-1.6-1.3-3.4-1.3-5.5s0.5-3.9,1.4-5.5
+                        s2.2-2.8,3.8-3.6c1.6-0.9,3.3-1.3,5.3-1.3s3.7,0.4,5.3,1.3c1.6,0.8,2.8,2.1,3.7,3.6c0.9,1.6,1.4,3.4,1.4,5.5s-0.5,3.9-1.4,5.5
+                        s-2.2,2.8-3.8,3.7C483.9,87.2,482.1,87.6,480.1,87.6z M480.1,83.2c0.9,0,1.8-0.2,2.6-0.7c0.8-0.5,1.5-1.1,2-2s0.7-2,0.7-3.3
+                        c0-1.9-0.5-3.4-1.5-4.4s-2.2-1.6-3.7-1.6s-2.7,0.5-3.7,1.6c-1,1-1.5,2.5-1.5,4.4s0.5,3.4,1.4,4.4C477.5,82.7,478.7,83.2,480.1,83.2
+                        z"/>
+                    <path fill="#FFFFFF" d="M518.7,66.8c2.5,0,4.5,0.8,6,2.3s2.3,3.6,2.3,6.3v11.8h-5.1V76.1c0-1.6-0.4-2.8-1.2-3.6
+                        c-0.8-0.8-1.9-1.3-3.3-1.3c-1.4,0-2.5,0.4-3.3,1.3c-0.8,0.8-1.2,2-1.2,3.6v11.1h-5.1V76.1c0-1.6-0.4-2.8-1.2-3.6
+                        c-0.8-0.8-1.9-1.3-3.3-1.3s-2.5,0.4-3.4,1.3c-0.8,0.8-1.2,2-1.2,3.6v11.1h-5.1V67h5.1v2.4c0.6-0.8,1.5-1.5,2.5-2s2.2-0.7,3.4-0.7
+                        c1.6,0,3,0.3,4.2,1s2.2,1.6,2.9,2.8c0.6-1.2,1.6-2.1,2.8-2.8C515.9,67.2,517.3,66.8,518.7,66.8z"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="max-w-4xl text-center">
+            <h1 class="font-display text-5xl lg:text-6xl font-bold mb-6"><span style="color:#6B7A3A;">Thornton</span> <span style="color:#D04A1A;">Tomasetti</span> <span class="text-white">+</span> <span class="accent-purple">monday.com</span></h1>
+            <p class="text-2xl text-gray-300 mb-12 font-light">One global controllership. One standard. One close.</p>
+            <p class="text-sm text-gray-500 tracking-wide">Prepared for Peter Wanner, Global Controller | March 2026</p>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 2: WHAT WE HEARD -->
+    <section class="py-20 px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl font-bold mb-16 text-center">What We Heard</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="card-dark p-8">
+                    <h3 class="text-xl font-semibold mb-4">10 business days to close</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">Draft financials delivered on the 10th business day. Daily standup meetings spent gathering status instead of solving problems.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card-dark p-8">
+                    <h3 class="text-xl font-semibold mb-4">Fragmented visibility</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">Close progress tracked in Blackline, Excel, email, and tribal knowledge. No single view across entities.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card-dark p-8">
+                    <h3 class="text-xl font-semibold mb-4">Untracked dependencies</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">Revenue recognition waits on billing. Consolidation waits on FX. These dependencies exist but are managed by memory, not systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 3: WHAT CHANGES — Mini Dashboard Mockups -->
+    <section class="py-20 px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl font-bold mb-6 text-center">What your close looks like with monday.com</h2>
+            <p class="text-center text-[#A9AEBE] mb-16 max-w-2xl mx-auto">Three views that replace the daily status-gathering meeting.</p>
+
+            <!-- MOCKUP 1: Global Close Command Center -->
+            <div class="card-dark p-0 mb-10 overflow-hidden">
+                <!-- Dashboard Header Bar -->
+                <div style="background:#181B34; border-bottom:1px solid rgba(255,255,255,0.08);" class="px-6 py-3 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div style="width:10px;height:10px;background:#6161FF;border-radius:3px;"></div>
+                        <span class="text-white text-sm font-semibold">Global Close Command Center</span>
+                        <span class="text-[#A9AEBE] text-xs ml-2">March 2026 Close</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span style="background:#292D4A;border-radius:4px;padding:2px 8px;font-size:11px;color:#A9AEBE;">All Entities</span>
+                        <span style="background:#292D4A;border-radius:4px;padding:2px 8px;font-size:11px;color:#A9AEBE;">Day 6 of 8</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <!-- Top Row: Metric Cards -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                        <div style="background:#181B34;border:1px solid rgba(255,255,255,0.06);border-radius:10px;" class="p-4">
+                            <p class="text-[#A9AEBE] text-xs mb-1">Tasks Complete</p>
+                            <p class="text-2xl font-bold text-white">34<span class="text-[#A9AEBE] text-sm font-normal"> / 48</span></p>
+                            <div style="margin-top:6px;height:4px;background:#292D4A;border-radius:2px;overflow:hidden;">
+                                <div style="width:71%;height:100%;background:#00CA72;border-radius:2px;"></div>
+                            </div>
+                        </div>
+                        <div style="background:#181B34;border:1px solid rgba(255,255,255,0.06);border-radius:10px;" class="p-4">
+                            <p class="text-[#A9AEBE] text-xs mb-1">Roadblocks</p>
+                            <p class="text-2xl font-bold" style="color:#FB275D;">3</p>
+                            <p class="text-xs mt-1" style="color:#FB275D;">Revenue, IC, FX</p>
+                        </div>
+                        <div style="background:#181B34;border:1px solid rgba(255,255,255,0.06);border-radius:10px;" class="p-4">
+                            <p class="text-[#A9AEBE] text-xs mb-1">Days Remaining</p>
+                            <p class="text-2xl font-bold" style="color:#FFCC00;">2</p>
+                            <p class="text-[#A9AEBE] text-xs mt-1">Target: Day 8</p>
+                        </div>
+                        <div style="background:#181B34;border:1px solid rgba(255,255,255,0.06);border-radius:10px;" class="p-4">
+                            <p class="text-[#A9AEBE] text-xs mb-1">Entity Progress</p>
+                            <div class="flex items-center gap-1 mt-2">
+                                <span style="background:#00CA72;border-radius:3px;padding:1px 6px;font-size:10px;color:white;">US 85%</span>
+                                <span style="background:#FFCC00;border-radius:3px;padding:1px 6px;font-size:10px;color:#181B34;">UK 60%</span>
+                                <span style="background:#FB275D;border-radius:3px;padding:1px 6px;font-size:10px;color:white;">IN 45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Battery Widget -->
+                    <div style="background:#181B34;border:1px solid rgba(255,255,255,0.06);border-radius:10px;" class="p-4 mb-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <p class="text-white text-xs font-semibold">Close Status</p>
+                            <div class="flex items-center gap-3 text-xs">
+                                <span class="flex items-center gap-1"><span style="width:8px;height:8px;background:#00CA72;border-radius:2px;display:inline-block;"></span> Complete</span>
+                                <span class="flex items-center gap-1"><span style="width:8px;height:8px;background:#579BFC;border-radius:2px;display:inline-block;"></span> In Progress</span>
+                                <span class="flex items-center gap-1"><span style="width:8px;height:8px;background:#FFCC00;border-radius:2px;display:inline-block;"></span> Not Started</span>
+                                <span class="flex items-center gap-1"><span style="width:8px;height:8px;background:#FB275D;border-radius:2px;display:inline-block;"></span> Roadblock</span>
+                            </div>
+                        </div>
+                        <div style="height:28px;border-radius:6px;overflow:hidden;display:flex;">
+                            <div style="width:52%;background:#00CA72;"></div>
+                            <div style="width:19%;background:#579BFC;"></div>
+                            <div style="width:23%;background:#FFCC00;"></div>
+                            <div style="width:6%;background:#FB275D;"></div>
+                        </div>
+                    </div>
+                    <!-- Mini Table: Roadblocks -->
+                    <div style="background:#181B34;border:1px solid rgba(255,255,255,0.06);border-radius:10px;" class="overflow-hidden">
+                        <div class="px-4 py-2" style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                            <p class="text-white text-xs font-semibold flex items-center gap-2">
+                                <span style="width:6px;height:6px;background:#FB275D;border-radius:50%;display:inline-block;"></span>
+                                Roadblocks requiring attention
+                            </p>
+                        </div>
+                        <!-- Row 1 -->
+                        <div class="flex items-center px-4 py-2.5 text-xs" style="border-bottom:1px solid rgba(255,255,255,0.04);">
+                            <span class="text-white flex-1">Revenue recognition - Fixed fee projects</span>
+                            <span style="background:#FB275D;border-radius:4px;padding:2px 8px;color:white;font-size:10px;" class="mr-3">Roadblock</span>
+                            <span class="text-[#A9AEBE] w-16">UK</span>
+                            <span class="text-[#A9AEBE] w-16">Nikki</span>
+                            <span style="color:#FB275D;" class="w-16">Day 3 +2</span>
+                        </div>
+                        <!-- Row 2 -->
+                        <div class="flex items-center px-4 py-2.5 text-xs" style="border-bottom:1px solid rgba(255,255,255,0.04);">
+                            <span class="text-white flex-1">Intercompany eliminations</span>
+                            <span style="background:#FB275D;border-radius:4px;padding:2px 8px;color:white;font-size:10px;" class="mr-3">Roadblock</span>
+                            <span class="text-[#A9AEBE] w-16">Global</span>
+                            <span class="text-[#A9AEBE] w-16">Gulpreet</span>
+                            <span style="color:#FB275D;" class="w-16">Day 5 +1</span>
+                        </div>
+                        <!-- Row 3 -->
+                        <div class="flex items-center px-4 py-2.5 text-xs">
+                            <span class="text-white flex-1">FX conversion and revaluation</span>
+                            <span style="background:#FB275D;border-radius:4px;padding:2px 8px;color:white;font-size:10px;" class="mr-3">Roadblock</span>
+                            <span class="text-[#A9AEBE] w-16">Global</span>
+                            <span class="text-[#A9AEBE] w-16">Gulpreet</span>
+                            <span style="color:#FFCC00;" class="w-16">Day 5 due</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-6 pb-4">
+                    <p class="text-[#A9AEBE] text-xs leading-relaxed">Peter sees what is behind and what is blocked without asking. Daily standups become problem-solving sessions, not status-gathering.</p>
+                </div>
+            </div>
+
+            <!-- MOCKUP 2: Dependency-Tracked Close Template -->
+            <div class="card-dark p-0 mb-10 overflow-hidden">
+                <div style="background:#181B34; border-bottom:1px solid rgba(255,255,255,0.08);" class="px-6 py-3 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div style="width:10px;height:10px;background:#FFCC00;border-radius:3px;"></div>
+                        <span class="text-white text-sm font-semibold">March 2026 Close - US Entity</span>
+                        <span class="text-[#A9AEBE] text-xs ml-2">Gantt View</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span style="background:#292D4A;border-radius:4px;padding:2px 8px;font-size:11px;color:#A9AEBE;">Template: US Standard</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <!-- Gantt-style dependency chart -->
+                    <div style="position:relative;">
+                        <!-- Day headers -->
+                        <div class="flex items-center mb-3" style="padding-left:180px;">
+                            <div class="flex-1 grid grid-cols-8 text-xs text-[#A9AEBE] text-center">
+                                <span>Day 1</span><span>Day 2</span><span>Day 3</span><span>Day 4</span><span>Day 5</span><span>Day 6</span><span>Day 7</span><span>Day 8</span>
+                            </div>
+                        </div>
+                        <!-- Gantt Rows -->
+                        <div class="space-y-2">
+                            <!-- Row 1 -->
+                            <div class="flex items-center" style="height:28px;">
+                                <span class="text-white text-xs w-44 truncate pr-3">Post payroll entries</span>
+                                <div class="flex-1 relative" style="height:20px;">
+                                    <div style="position:absolute;left:0%;width:12.5%;height:100%;background:#00CA72;border-radius:4px;display:flex;align-items:center;justify-content:center;">
+                                        <span style="font-size:9px;color:white;">Melanie</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 2 -->
+                            <div class="flex items-center" style="height:28px;">
+                                <span class="text-white text-xs w-44 truncate pr-3">Close billing module</span>
+                                <div class="flex-1 relative" style="height:20px;">
+                                    <div style="position:absolute;left:0%;width:25%;height:100%;background:#00CA72;border-radius:4px;display:flex;align-items:center;justify-content:center;">
+                                        <span style="font-size:9px;color:white;">Nikki</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 3 - depends on billing -->
+                            <div class="flex items-center" style="height:28px;">
+                                <span class="text-white text-xs w-44 truncate pr-3 flex items-center gap-1">
+                                    <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 0 L2 7 L5 7" stroke="#579BFC" fill="none" stroke-width="1.2"/></svg>
+                                    Revenue recognition - T&E
+                                </span>
+                                <div class="flex-1 relative" style="height:20px;">
+                                    <div style="position:absolute;left:25%;width:25%;height:100%;background:#579BFC;border-radius:4px;display:flex;align-items:center;justify-content:center;">
+                                        <span style="font-size:9px;color:white;">Nikki</span>
+                                    </div>
+                                    <!-- Dependency arrow -->
+                                    <div style="position:absolute;left:23%;top:50%;width:8px;height:1px;background:#579BFC;"></div>
+                                </div>
+                            </div>
+                            <!-- Row 4 -->
+                            <div class="flex items-center" style="height:28px;">
+                                <span class="text-white text-xs w-44 truncate pr-3">Accruals and reserves</span>
+                                <div class="flex-1 relative" style="height:20px;">
+                                    <div style="position:absolute;left:25%;width:25%;height:100%;background:#00CA72;border-radius:4px;display:flex;align-items:center;justify-content:center;">
+                                        <span style="font-size:9px;color:white;">Celeste</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 5 -->
+                            <div class="flex items-center" style="height:28px;">
+                                <span class="text-white text-xs w-44 truncate pr-3">Bank reconciliation</span>
+                                <div class="flex-1 relative" style="height:20px;">
+                                    <div style="position:absolute;left:12.5%;width:25%;height:100%;background:#00CA72;border-radius:4px;display:flex;align-items:center;justify-content:center;">
+                                        <span style="font-size:9px;color:white;">Gulpreet</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 6 - depends on multiple -->
+                            <div class="flex items-center" style="height:28px;">
+                                <span class="text-white text-xs w-44 truncate pr-3 flex items-center gap-1">
+                                    <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 0 L2 7 L5 7" stroke="#9D50DD" fill="none" stroke-width="1.2"/></svg>
+                                    IC eliminations
+                                </span>
+                                <div class="flex-1 relative" style="height:20px;">
+                                    <div style="position:absolute;left:50%;width:12.5%;height:100%;background:#FB275D;border-radius:4px;display:flex;align-items:center;justify-content:center;">
+                                        <span style="font-size:9px;color:white;">Gulpreet</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 7 -->
+                            <div class="flex items-center" style="height:28px;">
+                                <span class="text-white text-xs w-44 truncate pr-3 flex items-center gap-1">
+                                    <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 0 L2 7 L5 7" stroke="#9D50DD" fill="none" stroke-width="1.2"/></svg>
+                                    Consolidation &amp; FX
+                                </span>
+                                <div class="flex-1 relative" style="height:20px;">
+                                    <div style="position:absolute;left:50%;width:25%;height:100%;background:#FFCC00;border-radius:4px;display:flex;align-items:center;justify-content:center;">
+                                        <span style="font-size:9px;color:#181B34;">Gulpreet</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 8 -->
+                            <div class="flex items-center" style="height:28px;">
+                                <span class="text-white text-xs w-44 truncate pr-3 flex items-center gap-1">
+                                    <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 0 L2 7 L5 7" stroke="#6161FF" fill="none" stroke-width="1.2"/></svg>
+                                    Draft financials
+                                </span>
+                                <div class="flex-1 relative" style="height:20px;">
+                                    <div style="position:absolute;left:75%;width:12.5%;height:100%;background:#C4C4C4;border-radius:4px;display:flex;align-items:center;justify-content:center;">
+                                        <span style="font-size:9px;color:#181B34;">Gulpreet</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 9 -->
+                            <div class="flex items-center" style="height:28px;">
+                                <span class="text-white text-xs w-44 truncate pr-3 flex items-center gap-1">
+                                    <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 0 L2 7 L5 7" stroke="#6161FF" fill="none" stroke-width="1.2"/></svg>
+                                    Review and sign-off
+                                </span>
+                                <div class="flex-1 relative" style="height:20px;">
+                                    <div style="position:absolute;left:87.5%;width:12.5%;height:100%;background:#C4C4C4;border-radius:4px;display:flex;align-items:center;justify-content:center;">
+                                        <span style="font-size:9px;color:#181B34;">Peter</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Today marker -->
+                        <div style="position:absolute;top:0;bottom:0;left:calc(180px + (5/8 * (100% - 180px)));width:1px;border-left:2px dashed #6161FF;opacity:0.5;pointer-events:none;"></div>
+                    </div>
+                </div>
+                <div class="px-6 pb-4">
+                    <p class="text-[#A9AEBE] text-xs leading-relaxed">Each close spins up from a standardized template. Steps are dependency-linked with real owner names. When billing closes, revenue recognition is unblocked automatically.</p>
+                </div>
+            </div>
+
+            <!-- MOCKUP 3: Trend Analysis -->
+            <div class="card-dark p-0 overflow-hidden">
+                <div style="background:#181B34; border-bottom:1px solid rgba(255,255,255,0.08);" class="px-6 py-3 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div style="width:10px;height:10px;background:#00CA72;border-radius:3px;"></div>
+                        <span class="text-white text-sm font-semibold">Close Performance Trends</span>
+                        <span class="text-[#A9AEBE] text-xs ml-2">Last 6 Months</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Left: Bar Chart - Days to Close by Month -->
+                        <div style="background:#181B34;border:1px solid rgba(255,255,255,0.06);border-radius:10px;" class="p-4">
+                            <p class="text-white text-xs font-semibold mb-4">Days to close (business days)</p>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-[#A9AEBE] text-xs w-8">Oct</span>
+                                    <div style="height:18px;width:100%;background:#292D4A;border-radius:3px;overflow:hidden;position:relative;">
+                                        <div style="width:100%;height:100%;background:#FB275D;border-radius:3px;display:flex;align-items:center;padding-left:6px;">
+                                            <span style="font-size:9px;color:white;">12 days</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-[#A9AEBE] text-xs w-8">Nov</span>
+                                    <div style="height:18px;width:100%;background:#292D4A;border-radius:3px;overflow:hidden;">
+                                        <div style="width:92%;height:100%;background:#FB275D;border-radius:3px;display:flex;align-items:center;padding-left:6px;">
+                                            <span style="font-size:9px;color:white;">11 days</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-[#A9AEBE] text-xs w-8">Dec</span>
+                                    <div style="height:18px;width:100%;background:#292D4A;border-radius:3px;overflow:hidden;">
+                                        <div style="width:83%;height:100%;background:#FFCC00;border-radius:3px;display:flex;align-items:center;padding-left:6px;">
+                                            <span style="font-size:9px;color:#181B34;">10 days</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-[#A9AEBE] text-xs w-8">Jan</span>
+                                    <div style="height:18px;width:100%;background:#292D4A;border-radius:3px;overflow:hidden;">
+                                        <div style="width:83%;height:100%;background:#FFCC00;border-radius:3px;display:flex;align-items:center;padding-left:6px;">
+                                            <span style="font-size:9px;color:#181B34;">10 days</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-[#A9AEBE] text-xs w-8">Feb</span>
+                                    <div style="height:18px;width:100%;background:#292D4A;border-radius:3px;overflow:hidden;">
+                                        <div style="width:75%;height:100%;background:#579BFC;border-radius:3px;display:flex;align-items:center;padding-left:6px;">
+                                            <span style="font-size:9px;color:white;">9 days</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-[#A9AEBE] text-xs w-8">Mar</span>
+                                    <div style="height:18px;width:100%;background:#292D4A;border-radius:3px;overflow:hidden;">
+                                        <div style="width:67%;height:100%;background:#00CA72;border-radius:3px;display:flex;align-items:center;padding-left:6px;">
+                                            <span style="font-size:9px;color:white;">8 days</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Target line label -->
+                            <div class="flex items-center gap-2 mt-3">
+                                <div style="width:20px;height:1px;border-top:2px dashed #00CA72;"></div>
+                                <span class="text-xs" style="color:#00CA72;">Target: 8 days</span>
+                            </div>
+                        </div>
+                        <!-- Right: Recurring Roadblocks -->
+                        <div style="background:#181B34;border:1px solid rgba(255,255,255,0.06);border-radius:10px;" class="p-4">
+                            <p class="text-white text-xs font-semibold mb-4">Recurring roadblocks (last 6 closes)</p>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-white text-xs">Revenue recognition</span>
+                                        <span style="color:#FB275D;" class="text-xs font-semibold">5 of 6</span>
+                                    </div>
+                                    <div style="height:10px;background:#292D4A;border-radius:3px;overflow:hidden;">
+                                        <div style="width:83%;height:100%;background:linear-gradient(90deg,#FB275D,#FB275D);border-radius:3px;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-white text-xs">IC eliminations</span>
+                                        <span style="color:#FF642E;" class="text-xs font-semibold">4 of 6</span>
+                                    </div>
+                                    <div style="height:10px;background:#292D4A;border-radius:3px;overflow:hidden;">
+                                        <div style="width:67%;height:100%;background:#FF642E;border-radius:3px;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-white text-xs">FX conversion</span>
+                                        <span style="color:#FFCC00;" class="text-xs font-semibold">3 of 6</span>
+                                    </div>
+                                    <div style="height:10px;background:#292D4A;border-radius:3px;overflow:hidden;">
+                                        <div style="width:50%;height:100%;background:#FFCC00;border-radius:3px;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-white text-xs">Bank reconciliation</span>
+                                        <span style="color:#579BFC;" class="text-xs font-semibold">2 of 6</span>
+                                    </div>
+                                    <div style="height:10px;background:#292D4A;border-radius:3px;overflow:hidden;">
+                                        <div style="width:33%;height:100%;background:#579BFC;border-radius:3px;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-white text-xs">Payroll entries</span>
+                                        <span class="text-[#A9AEBE] text-xs font-semibold">1 of 6</span>
+                                    </div>
+                                    <div style="height:10px;background:#292D4A;border-radius:3px;overflow:hidden;">
+                                        <div style="width:17%;height:100%;background:#C4C4C4;border-radius:3px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-[#A9AEBE] text-xs mt-4" style="line-height:1.5;">Revenue recognition is the most common blocker. Data like this surfaces the root cause, not guesses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-6 pb-4">
+                    <p class="text-[#A9AEBE] text-xs leading-relaxed">Month-over-month data reveals which steps consistently run late. Peter's question answered: "Do we always have the same issue in the same area?"</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 4: THREE PILLARS -->
+    <section class="py-20 px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl font-bold mb-16 text-center">Built for your requirements</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="card-dark p-10 border-l-4 border-purple-500">
+                    <h3 class="text-xl font-semibold mb-6 font-display">Month-end close management</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-purple-500 mr-3">•</span>
+                            <span>Global checklist</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-purple-500 mr-3">•</span>
+                            <span>Entity-level tracking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-purple-500 mr-3">•</span>
+                            <span>Dependency chains</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-purple-500 mr-3">•</span>
+                            <span>Target day enforcement</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-purple-500 mr-3">•</span>
+                            <span>Roadblock escalation</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="card-dark p-10 border-l-4 border-yellow-400">
+                    <h3 class="text-xl font-semibold mb-6 font-display">Controllership project portfolio</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-3">•</span>
+                            <span>80+ strategic initiatives</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-3">•</span>
+                            <span>Payroll</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-3">•</span>
+                            <span>Process documentation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-3">•</span>
+                            <span>Controls</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-3">•</span>
+                            <span>Accounting policies, revenue reporting, treasury</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="card-dark p-10 border-l-4 border-green-500">
+                    <h3 class="text-xl font-semibold mb-6 font-display">Leadership dashboards</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-3">•</span>
+                            <span>Real-time close progress</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-3">•</span>
+                            <span>Exception-only CFO view</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-3">•</span>
+                            <span>Historical trend analysis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-3">•</span>
+                            <span>Entity performance comparison</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 5: METRICS BAR -->
+    <section class="py-20 px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Metric 1 -->
+                <div class="card-dark p-12 text-center">
+                    <div class="mb-4">
+                        <span class="accent-green font-display text-4xl font-bold">10</span>
+                        <span class="text-gray-400 text-2xl mx-2">→</span>
+                        <span class="accent-green font-display text-4xl font-bold">8</span>
+                        <span class="text-gray-400 text-lg ml-2">days</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-4">Close duration target</p>
+                </div>
+
+                <!-- Metric 2 -->
+                <div class="card-dark p-12 text-center">
+                    <div class="mb-4">
+                        <span class="accent-yellow font-display text-4xl font-bold">75</span>
+                        <span class="text-gray-400 text-lg ml-2">users</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-4">Global team at scale</p>
+                </div>
+
+                <!-- Metric 3 -->
+                <div class="card-dark p-12 text-center">
+                    <div class="mb-4">
+                        <span class="accent-purple font-display text-4xl font-bold">5</span>
+                        <span class="text-gray-400 text-lg ml-2">regions</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-4">US, UK, India, Vietnam, Australia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 6: NEXT STEPS -->
+    <section class="py-20 px-8 lg:px-16">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="font-display text-4xl font-bold mb-12">Next Steps</h2>
+            <div class="card-dark p-12 mb-8">
+                <h3 class="text-xl font-semibold mb-6" style="color:#00CA72;">Live Platform Demo</h3>
+                <p class="text-gray-300 leading-relaxed mb-4">We have built a tailored demo environment using your actual close process, entity structure, and controllership project portfolio. Up next, we will walk through it live:</p>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1.5rem;">
+                    <div style="background:rgba(255,255,255,0.04); border-radius:0.75rem; padding:1rem 1.25rem; border-left:3px solid #6161FF;">
+                        <p style="color:#6161FF; font-weight:600; font-size:0.85rem; margin-bottom:0.25rem;">Global Close Board</p>
+                        <p style="color:#A9AEBE; font-size:0.75rem;">Dependency-tracked close checklist across all entities</p>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.04); border-radius:0.75rem; padding:1rem 1.25rem; border-left:3px solid #00CA72;">
+                        <p style="color:#00CA72; font-weight:600; font-size:0.85rem; margin-bottom:0.25rem;">Command Center Dashboard</p>
+                        <p style="color:#A9AEBE; font-size:0.75rem;">Real-time visibility Peter can open at 7 AM</p>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.04); border-radius:0.75rem; padding:1rem 1.25rem; border-left:3px solid #FFCC00;">
+                        <p style="color:#FFCC00; font-weight:600; font-size:0.85rem; margin-bottom:0.25rem;">Controllership Projects</p>
+                        <p style="color:#A9AEBE; font-size:0.75rem;">80+ transformation initiatives tracked with timelines</p>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.04); border-radius:0.75rem; padding:1rem 1.25rem; border-left:3px solid #FB275D;">
+                        <p style="color:#FB275D; font-weight:600; font-size:0.85rem; margin-bottom:0.25rem;">Automations & AI</p>
+                        <p style="color:#A9AEBE; font-size:0.75rem;">Status escalations, reminders, and AI-powered summaries</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-gray-400 text-lg leading-relaxed">Everything you are about to see was built from the process and priorities you shared with us.</p>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 7: FOOTER -->
+    <section class="py-16 px-8 lg:px-16 border-t border-white/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-8 md:mb-0 flex items-center gap-4">
+                    <!-- Thornton Tomasetti Logo (footer) -->
+                    <div style="line-height:1.05; font-family:'Georgia','Times New Roman',serif; font-weight:900; letter-spacing:-0.5px;">
+                        <span style="color:#6B7A3A; font-size:14px; display:block;">Thornton</span>
+                        <span style="color:#D04A1A; font-size:14px; display:block;">Tomasetti</span>
+                    </div>
+                    <div style="width:1px; height:24px; background:rgba(255,255,255,0.2);"></div>
+                    <!-- monday.com Logo (footer) -->
+                    <svg viewBox="0 0 542.3 126.9" xmlns="http://www.w3.org/2000/svg" height="24">
+                        <g>
+                            <path fill="#FB275D" d="M24.8,87.2c-3.7,0-7.1-1.9-8.9-5.1c-1.8-3.1-1.7-6.9,0.3-9.9L34.5,44c1.9-3.1,5.4-4.9,9.1-4.8
+                                c3.7,0.1,7.1,2.1,8.8,5.3c1.7,3.2,1.5,7-0.5,9.9L33.4,82.6C31.6,85.4,28.3,87.2,24.8,87.2z"/>
+                            <path fill="#FFCC00" d="M56.1,87.2c-3.7,0-7.1-1.9-8.9-5c-1.8-3.1-1.7-6.9,0.3-9.9l18.4-28.1c1.9-3.1,5.3-5,9.1-4.9s7.1,2.1,8.8,5.3
+                                s1.5,7-0.7,10l-18.4,28C62.9,85.4,59.6,87.1,56.1,87.2L56.1,87.2z"/>
+                            <path fill="#00CA72" d="M86.7,87.2c5.6,0,10.2-4.6,10.2-10.2s-4.6-10.2-10.2-10.2S76.5,71.4,76.5,77C76.5,82.7,81,87.2,86.7,87.2z"/>
+                            <path fill="#FFFFFF" d="M170.9,41.8c5.6,0,10,1.7,13.3,5.1s5,8.1,5,14.1v26.2h-13.7V62.8c0-2.9-0.8-5.1-2.3-6.7s-3.6-2.4-6.3-2.4
+                                s-4.8,0.8-6.4,2.4c-1.5,1.5-2.2,3.8-2.2,6.7v24.4h-13.7V62.8c0-2.9-0.8-5.1-2.3-6.7s-3.6-2.4-6.3-2.4s-4.8,0.8-6.4,2.4
+                                c-1.5,1.5-2.2,3.8-2.2,6.7v24.4h-13.8V42.3h13.8v5.6c1.4-1.9,3.2-3.3,5.5-4.4c2.2-1.1,4.8-1.7,7.6-1.7c3.4,0,6.4,0.7,9,2.2
+                                c2.7,1.5,4.8,3.5,6.3,6.2c1.6-2.5,3.7-4.5,6.4-6C164.8,42.5,167.7,41.8,170.9,41.8z"/>
+                            <path fill="#FFFFFF" d="M216.8,87.8c-4.4,0-8.4-0.9-11.9-2.8c-3.5-1.9-6.2-4.6-8.3-8c-2-3.5-3-7.6-3-12.2s1-8.7,3.1-12.1
+                                c2-3.5,4.8-6.2,8.4-8.1c3.5-1.9,7.5-2.8,11.9-2.8s8.4,0.9,11.9,2.8s6.3,4.6,8.4,8.1c2,3.5,3.1,7.5,3.1,12.1s-1.1,8.7-3.1,12.2
+                                s-4.9,6.2-8.4,8C225.2,86.8,221.2,87.8,216.8,87.8z M216.8,75.8c2.6,0,4.9-1,6.7-2.9c1.9-1.9,2.8-4.7,2.8-8.3s-0.9-6.3-2.7-8.3
+                                c-1.8-1.9-4-2.9-6.6-2.9c-2.7,0-4.9,1-6.7,2.9s-2.6,4.6-2.6,8.3c0,3.6,0.9,6.3,2.6,8.3C212,74.9,214.2,75.8,216.8,75.8z"/>
+                            <path fill="#FFFFFF" d="M272.5,41.8c5.3,0,9.4,1.7,12.5,5.2c3.2,3.4,4.8,8,4.8,14v26.2h-13.7V62.8c0-3-0.8-5.3-2.3-7
+                                c-1.6-1.7-3.6-2.5-6.3-2.5c-2.6,0-4.7,0.8-6.3,2.5c-1.6,1.7-2.3,4-2.3,7v24.4h-13.8V42.3h13.8v5.9c1.4-2,3.3-3.5,5.6-4.7
+                                C266.9,42.3,269.6,41.8,272.5,41.8z"/>
+                            <path fill="#FFFFFF" d="M294.2,64.6c0-4.6,0.9-8.7,2.6-12.1c1.8-3.5,4.2-6.2,7.2-8c3-1.9,6.4-2.8,10-2.8c3,0,5.6,0.6,8,1.8
+                                c2.5,1.2,4.4,2.9,5.8,5V27.7h13.8v59.5h-13.8v-6.4c-1.3,2.1-3.1,3.9-5.5,5.2c-2.4,1.3-5.1,1.9-8.3,1.9c-3.7,0-7-0.9-10-2.8
+                                s-5.4-4.6-7.2-8.1C295.1,73.3,294.2,69.2,294.2,64.6z M327.8,64.7c0-3.4-1-6.1-2.9-8.1s-4.2-3-6.9-3c-2.7,0-5.1,1-7,3
+                                c-1.9,1.9-2.8,4.6-2.8,8s0.9,6.2,2.8,8.2s4.3,3,7,3s5-1,6.9-3C326.9,70.8,327.8,68.1,327.8,64.7z"/>
+                            <path fill="#FFFFFF" d="M346.4,64.6c0-4.6,0.9-8.7,2.6-12.1c1.8-3.5,4.2-6.2,7.2-8c3-1.9,6.4-2.8,10-2.8c3.2,0,5.9,0.6,8.3,1.9
+                                s4.3,3,5.5,5.1v-6.3h13.8v44.9H380v-6.4c-1.3,2.1-3.2,3.8-5.6,5.1s-5.1,1.9-8.3,1.9c-3.6,0-7-0.9-10-2.8c-3-1.9-5.4-4.6-7.2-8.1
+                                C347.2,73.3,346.4,69.2,346.4,64.6z M380,64.7c0-3.4-1-6.1-2.9-8.1s-4.2-3-6.9-3c-2.7,0-5.1,1-7,3c-1.9,1.9-2.8,4.6-2.8,8
+                                s0.9,6.2,2.8,8.2s4.3,3,7,3s5-1,6.9-3C379,70.8,380,68.1,380,64.7z"/>
+                            <path fill="#FFFFFF" d="M447.1,42.2L419,108.4h-14.8l10.3-22.8l-18.3-43.4h15.4L422,70.3l10.3-28.1L447.1,42.2L447.1,42.2z"/>
+                            <path fill="#FFFFFF" d="M438.8,87.7c-1.2,0-2.2-0.4-3.1-1.1c-0.8-0.8-1.2-1.7-1.2-2.9s0.4-2.1,1.2-2.8c0.8-0.8,1.8-1.2,3.1-1.2
+                                c1.2,0,2.2,0.4,3,1.2c0.8,0.7,1.2,1.7,1.2,2.8s-0.4,2.1-1.2,2.9C441,87.3,440,87.7,438.8,87.7z"/>
+                            <path fill="#FFFFFF" d="M448.7,77.2c0-2.1,0.4-3.9,1.3-5.5s2-2.8,3.5-3.6c1.5-0.9,3.2-1.3,5.2-1.3c2.5,0,4.6,0.6,6.2,1.9
+                                c1.6,1.2,2.8,3,3.3,5.2h-5.5c-0.3-0.9-0.8-1.6-1.5-2c-0.7-0.5-1.5-0.8-2.5-0.8c-1.5,0-2.6,0.5-3.5,1.6c-0.9,1-1.3,2.5-1.3,4.5
+                                c0,1.9,0.4,3.4,1.3,4.5c0.9,1,2,1.6,3.5,1.6c2.1,0,3.4-0.9,4-2.8h5.5c-0.6,2.2-1.7,3.9-3.3,5.2c-1.6,1.3-3.7,1.9-6.2,1.9
+                                c-1.9,0-3.7-0.4-5.2-1.3c-1.5-0.9-2.7-2.1-3.5-3.6C449.1,81.1,448.7,79.3,448.7,77.2z"/>
+                            <path fill="#FFFFFF" d="M480.1,87.6c-1.9,0-3.7-0.4-5.2-1.3c-1.5-0.9-2.8-2.1-3.7-3.7c-0.9-1.6-1.3-3.4-1.3-5.5s0.5-3.9,1.4-5.5
+                                s2.2-2.8,3.8-3.6c1.6-0.9,3.3-1.3,5.3-1.3s3.7,0.4,5.3,1.3c1.6,0.8,2.8,2.1,3.7,3.6c0.9,1.6,1.4,3.4,1.4,5.5s-0.5,3.9-1.4,5.5
+                                s-2.2,2.8-3.8,3.7C483.9,87.2,482.1,87.6,480.1,87.6z M480.1,83.2c0.9,0,1.8-0.2,2.6-0.7c0.8-0.5,1.5-1.1,2-2s0.7-2,0.7-3.3
+                                c0-1.9-0.5-3.4-1.5-4.4s-2.2-1.6-3.7-1.6s-2.7,0.5-3.7,1.6c-1,1-1.5,2.5-1.5,4.4s0.5,3.4,1.4,4.4C477.5,82.7,478.7,83.2,480.1,83.2
+                                z"/>
+                            <path fill="#FFFFFF" d="M518.7,66.8c2.5,0,4.5,0.8,6,2.3s2.3,3.6,2.3,6.3v11.8h-5.1V76.1c0-1.6-0.4-2.8-1.2-3.6
+                                c-0.8-0.8-1.9-1.3-3.3-1.3c-1.4,0-2.5,0.4-3.3,1.3c-0.8,0.8-1.2,2-1.2,3.6v11.1h-5.1V76.1c0-1.6-0.4-2.8-1.2-3.6
+                                c-0.8-0.8-1.9-1.3-3.3-1.3s-2.5,0.4-3.4,1.3c-0.8,0.8-1.2,2-1.2,3.6v11.1h-5.1V67h5.1v2.4c0.6-0.8,1.5-1.5,2.5-2s2.2-0.7,3.4-0.7
+                                c1.6,0,3,0.3,4.2,1s2.2,1.6,2.9,2.8c0.6-1.2,1.6-2.1,2.8-2.8C515.9,67.2,517.3,66.8,518.7,66.8z"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text-center md:text-right text-sm text-gray-500">
+                    <p>Ryan Guensch, Senior Enterprise Account Executive</p>
+                    <p>Harris Rosado, Senior Solution Engineer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
